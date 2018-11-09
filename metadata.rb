@@ -17,5 +17,5 @@ depends          'tar'
 depends          'firewall'
 depends          'ufw'
 
-source_url       'https://github.com/evilmartians/chef-kubernetes'
-issues_url       'https://github.com/evilmartians/chef-kubernetes/issues'
+source_url       'https://github.com/dnmsk/chef-kubernetes'
+issues_url       'https://github.com/dnmsk/chef-kubernetes/issues'
