@@ -11,7 +11,7 @@ etcd_nodes = search(
 ).map { |n| k8s_ip(n) }.sort
 
 initial_cluster_string =
-  etcd_nodes.map do |addr|
+  etcd_nodes.uniq.map do |addr|
     "#{addr}=#{node['etcd']['proto']}://#{addr}:#{node['etcd']['server_port']}"
   end.join ','
 
